@@ -4,7 +4,7 @@ namespace SampleApi.Repositories
     using System.Collections.Generic;
     using System.Threading;
     using System.Threading.Tasks;
-    using SampleApi.Models;
+    using Models;
 
     public interface ICarRepository
     {

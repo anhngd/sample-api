@@ -4,7 +4,7 @@ namespace SampleApi
     using System.IO;
     using System.Reflection;
     using System.Threading.Tasks;
-    using SampleApi.Options;
+    using Options;
     using Boxed.AspNetCore;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;
@@ -70,7 +70,7 @@ namespace SampleApi
                     configurationBuilder => configurationBuilder
                         .AddEnvironmentVariables(prefix: "DOTNET_")
                         .AddIf(
-                            args is not null,
+                            true,
                             x => x.AddCommandLine(args)))
                 .ConfigureAppConfiguration((hostingContext, config) =>
                     AddConfiguration(config, hostingContext.HostingEnvironment, args))
@@ -125,7 +125,7 @@ namespace SampleApi
                 .AddEnvironmentVariables()
                 // Add command line options. These take the highest priority.
                 .AddIf(
-                    args is not null,
+                    true,
                     x => x.AddCommandLine(args));
 
         /// <summary>

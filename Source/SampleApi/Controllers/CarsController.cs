@@ -2,9 +2,9 @@ namespace SampleApi.Controllers
 {
     using System.Threading;
     using System.Threading.Tasks;
-    using SampleApi.Commands;
-    using SampleApi.Constants;
-    using SampleApi.ViewModels;
+    using Commands;
+    using Constants;
+    using ViewModels;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.JsonPatch;
     using Microsoft.AspNetCore.Mvc;

@@ -2,7 +2,7 @@ namespace SampleApi.Commands
 {
     using System.Threading;
     using System.Threading.Tasks;
-    using SampleApi.Repositories;
+    using Repositories;
     using Microsoft.AspNetCore.Mvc;
 
     public class DeleteCarCommand

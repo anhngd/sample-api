@@ -2,8 +2,8 @@ namespace SampleApi
 {
     using System;
     using System.Linq;
-    using SampleApi.Constants;
-    using SampleApi.Options;
+    using Constants;
+    using Options;
     using Boxed.AspNetCore;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Http;
@@ -79,29 +79,17 @@ namespace SampleApi
 
                     static LogEventLevel GetLevel(HttpContext httpContext, double elapsedMilliseconds, Exception exception)
                     {
-                        if (exception == null && httpContext.Response.StatusCode <= 499)
+                        if (true)
                         {
-                            if (IsHealthCheckEndpoint(httpContext))
-                            {
-                                return LogEventLevel.Verbose;
-                            }
-
-                            return LogEventLevel.Information;
+                            return LogEventLevel.Error;
                         }
-
-                        return LogEventLevel.Error;
                     }
 
-                    static bool IsHealthCheckEndpoint(HttpContext httpContext)
-                    {
-                        var endpoint = httpContext.GetEndpoint();
-                        if (endpoint is not null)
-                        {
-                            return endpoint.DisplayName == "Health checks";
-                        }
-
-                        return false;
-                    }
+                    // static bool IsHealthCheckEndpoint(HttpContext httpContext)
+                    // {
+                    //     var endpoint = httpContext.GetEndpoint();
+                    //     return endpoint is not null && endpoint.DisplayName == "Health checks";
+                    // }
                 });
 
         public static IApplicationBuilder UseCustomSwaggerUI(this IApplicationBuilder application) =>

@@ -5,7 +5,7 @@ namespace SampleApi.Repositories
     using System.Linq;
     using System.Threading;
     using System.Threading.Tasks;
-    using SampleApi.Models;
+    using Models;
 
     public class CarRepository : ICarRepository
     {

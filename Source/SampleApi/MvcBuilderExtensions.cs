@@ -3,7 +3,7 @@ namespace SampleApi
     using System.Linq;
     using System.Text.Json;
     using System.Text.Json.Serialization;
-    using SampleApi.Options;
+    using Options;
     using Boxed.AspNetCore;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.JsonPatch;

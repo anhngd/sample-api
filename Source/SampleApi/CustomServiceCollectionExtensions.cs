@@ -2,8 +2,8 @@ namespace SampleApi
 {
     using System.IO.Compression;
     using System.Linq;
-    using SampleApi.Constants;
-    using SampleApi.Options;
+    using Constants;
+    using Options;
     using Boxed.AspNetCore;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.ResponseCompression;

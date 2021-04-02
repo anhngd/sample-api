@@ -1,10 +1,10 @@
 namespace SampleApi
 {
-    using SampleApi.Commands;
-    using SampleApi.Mappers;
-    using SampleApi.Repositories;
-    using SampleApi.Services;
-    using SampleApi.ViewModels;
+    using Commands;
+    using Mappers;
+    using Repositories;
+    using Services;
+    using ViewModels;
     using Boxed.Mapping;
     using Microsoft.Extensions.DependencyInjection;
 

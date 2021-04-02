@@ -1,6 +1,6 @@
 namespace SampleApi
 {
-    using SampleApi.OperationFilters;
+    using OperationFilters;
     using Boxed.AspNetCore.Swagger;
     using Boxed.AspNetCore.Swagger.OperationFilters;
     using Boxed.AspNetCore.Swagger.SchemaFilters;

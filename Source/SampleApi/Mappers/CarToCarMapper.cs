@@ -1,8 +1,8 @@
 namespace SampleApi.Mappers
 {
     using System;
-    using SampleApi.Constants;
-    using SampleApi.ViewModels;
+    using Constants;
+    using ViewModels;
     using Boxed.Mapping;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Routing;

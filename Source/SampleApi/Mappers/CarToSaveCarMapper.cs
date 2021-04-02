@@ -1,8 +1,8 @@
 namespace SampleApi.Mappers
 {
     using System;
-    using SampleApi.Services;
-    using SampleApi.ViewModels;
+    using Services;
+    using ViewModels;
     using Boxed.Mapping;
 
     public class CarToSaveCarMapper : IMapper<Models.Car, SaveCar>, IMapper<SaveCar, Models.Car>

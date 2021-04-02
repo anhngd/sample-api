@@ -10,7 +10,7 @@ namespace SampleApi.IntegrationTest.Controllers
     using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
-    using SampleApi.ViewModels;
+    using ViewModels;
     using Boxed.AspNetCore;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.JsonPatch;

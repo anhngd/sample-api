@@ -2,9 +2,9 @@ namespace SampleApi.IntegrationTest
 {
     using System;
     using System.Net.Http;
-    using SampleApi.Options;
-    using SampleApi.Repositories;
-    using SampleApi.Services;
+    using Options;
+    using Repositories;
+    using Services;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Mvc.Testing;
     using Microsoft.Extensions.DependencyInjection;

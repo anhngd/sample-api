@@ -4,9 +4,9 @@ namespace SampleApi.Commands
     using System.Collections.Generic;
     using System.Threading;
     using System.Threading.Tasks;
-    using SampleApi.Constants;
-    using SampleApi.Repositories;
-    using SampleApi.ViewModels;
+    using Constants;
+    using Repositories;
+    using ViewModels;
     using Boxed.AspNetCore;
     using Boxed.Mapping;
     using Microsoft.AspNetCore.Http;

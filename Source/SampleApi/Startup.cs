@@ -1,6 +1,6 @@
 namespace SampleApi
 {
-    using SampleApi.Constants;
+    using Constants;
     using Boxed.AspNetCore;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Diagnostics.HealthChecks;

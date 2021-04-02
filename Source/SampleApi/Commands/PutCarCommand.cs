@@ -2,8 +2,8 @@ namespace SampleApi.Commands
 {
     using System.Threading;
     using System.Threading.Tasks;
-    using SampleApi.Repositories;
-    using SampleApi.ViewModels;
+    using Repositories;
+    using ViewModels;
     using Boxed.Mapping;
     using Microsoft.AspNetCore.Mvc;
 

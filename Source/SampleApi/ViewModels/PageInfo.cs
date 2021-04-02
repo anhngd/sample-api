@@ -76,15 +76,9 @@ namespace SampleApi.ViewModels
                 values.Add(GetLinkValueItem(PreviousLinkItem, this.PreviousPageUrl));
             }
 
-            if (this.FirstPageUrl is not null)
-            {
-                values.Add(GetLinkValueItem(FirstLinkItem, this.FirstPageUrl));
-            }
+            values.Add(GetLinkValueItem(FirstLinkItem, this.FirstPageUrl));
 
-            if (this.LastPageUrl is not null)
-            {
-                values.Add(GetLinkValueItem(LastLinkItem, this.LastPageUrl));
-            }
+            values.Add(GetLinkValueItem(LastLinkItem, this.LastPageUrl));
 
             return string.Join(", ", values);
         }
